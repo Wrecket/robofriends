@@ -4,7 +4,7 @@
     "name": "Carrot cake",
     "type": "sweet",
     "author": "Grandma",
-    "link": "recipes/carrotcake.html",
+    "link": "../recipes/carrotcake.html",
     "img" : "../img/carrot.jpg"
   },
   {
@@ -12,15 +12,15 @@
     "name": "Spicy chicken pitta filling",
     "type": "savoury",
     "author": "Grandma",
-    "link": "recipes/chickenpitta.html",
-    "img" : "../img/chickenpitta.jpg"
+    "link": "../recipes/chickenpitta.html",
+    "img" : "./chickenpitta.jpg"
   },
   {
     "id": 3,
     "name": "Mushroom ham and chicken crusty puff pies",
     "type": "savoury",
     "author": "Grandma",
-    "link": "recipes/crustypuff.html",
+    "link": "../recipes/crustypuff.html",
     "img" : "../img/crustypuff.jpg"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Sweet potato pumpkin seed rolls",
     "type": "savoury",
     "author": "Grandma",
-    "link": "recipes/sweetpotrolls.html",
+    "link": "../recipes/sweetpotrolls.html",
     "img" : "../img/sweetpotrolls.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Wild mushroom wafer",
     "type": "savoury",
     "author": "Grandma",
-    "link": "recipes/mushroomwafer.html",
+    "link": "../recipes/mushroomwafer.html",
     "img" : "../img/shroomwafer.jpg"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Piri Piri chicken sauce",
     "type": "savoury",
     "author": "Grandma",
-    "link": "recipes/piriRecipe.html",
+    "link": "../recipes/piriRecipe.html",
     "img" : "../img/piri.jpg"
   },
   {
@@ -52,7 +52,7 @@
     "name": "Chicken Liver Pate'",
     "type": "savoury",
     "author": "Grandma",
-    "link": "recipes/pate.html",
+    "link": "../recipes/pate.html",
     "img" : "../img/pate.jpg"
   },
   {
@@ -60,7 +60,7 @@
     "name": "Creamy mushroom pasta",
     "type": "savoury",
     "author": "Grandma",
-    "link": "recipes/mushroompasta.html",
+    "link": "../recipes/mushroompasta.html",
     "img" : "../img/G4.png"
   },
   {
@@ -68,7 +68,7 @@
     "name": "Cheesey garlic bread",
     "type": "savoury",
     "author": "Grandma",
-    "link": "recipes/gbread.html",
+    "link": "../recipes/gbread.html",
     "img" : "../img/gbread.jpg"
   },
   {
@@ -84,7 +84,7 @@
     "name": "Sticky lemon ginger cake",
     "type": "sweet",
     "author": "Grandma",
-    "link": "recipes/stickyrecipe.html",
+    "link": "../recipes/stickyrecipe.html",
     "img" : "../img/gingersticky.jpg"
   },
   {
@@ -92,7 +92,7 @@
     "name": "Iced cream buns",
     "type": "sweet",
     "author": "Grandma",
-    "link": "recipes/icedcreambuns.html",
+    "link": "../recipes/icedcreambuns.html",
     "img" : "../img/icedcreambun.jpg"
   },
   {
@@ -100,7 +100,7 @@
     "name": "Pineapple Cake",
     "type": "sweet",
     "author": "Grandma",
-    "link": "recipes/pineapplecake.html",
+    "link": "../recipes/pineapplecake.html",
     "img" : "../img/pineapplecake.jpg"
   },
   {
@@ -108,6 +108,6 @@
     "name": "Sticky toffee pudding",
     "type": "sweet",
     "author": "Grandma",
-    "link": "recipes/stickytoffee.jpg"
+    "link": "../recipes/stickytoffee.jpg"
   }
 ]
