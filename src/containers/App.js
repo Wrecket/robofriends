@@ -1,51 +1,38 @@
-import React, {Component} from 'react';
-import CardList from '../components/CardList';
-import SearchBox from '../components/SearchBox';
+import React, { useState, useEffect } from "react";
+import axios from "../mock/mockAxios";
 import Scroll from "../components/Scroll";
-import ErrorBoundry from "../components/ErrorBoundry"
-import "../containers/App.css"
+import CardList from "../components/CardList";
 
+function App() {
+  const [recipes, setRecipes] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
+  useEffect(() => {
+    (async function fetchRecipes() {
+      const { data } = await axios.get("/recipes");
+      setRecipes(data);
+    })();
+  }, []);
 
-class App extends Component {
-    constructor() {
-        super()
-        this.state = {
-            robots: [],
-            searchfield: "",
-        }
-    }
+  const filteredRecipes = () => {
+    return recipes.filter(recipe => {
+      return recipe.name.toLowerCase().includes(searchTerm.toLowerCase());
+    });
+  };
 
-    componentDidMount() {
-        fetch("http://jsonplaceholder.typicode.com/users")
-        .then(response => { return response.json();})
-        .then(users => {this.setState({robots: users})});
-    }
+  return (
+    <div className="wrap f1 tc">
+      <h1 className="f1 tc">Recipes</h1>
 
-    onSearchChange= (event) =>{
-    this.setState({searchfield: event.target.value})
-    
-    }
+      <input className="" onChange={e => setSearchTerm(e.target.value)} value={searchTerm} />
 
-    render() {
-        const {robots, searchfield } = this.state
-        const filteredRobots = robots.filter(robot =>{
-            return robot.name.toLowerCase().includes(searchfield.toLowerCase());
-        })
-        return !robots.length ?
-         <h1 class="f1 tc">Loading</h1> :
-        (
-            <div className="tc">
-            <h1 className="f1">RoboFriends</h1>
-            <SearchBox searchChange={this.onSearchChange} />
-            <Scroll>
-                <ErrorBoundry>
-                    <CardList robots={filteredRobots}/>
-                </ErrorBoundry>
-            </Scroll>
-            </div>
-        )
-    }    
+      <div className="">
+        <Scroll>
+        <CardList recipes={filteredRecipes()} />
+        </Scroll>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -1,16 +1,20 @@
-import React from 'react';
+import React from "react";
+import "./card.css"
 
+const Card = ({recipe}) => {
+  return (
+    <div className="card-bg tc dib br3 pa3 ma2 grow bw2 shadow-5" style={{backgroundImage: `url("${recipe.img}")` }}>
+      <p className="test">{recipe.name}</p>
+      <p className="desc">
+        Recipe type: {recipe.type}
+      </p>
+      <p className="desc">
+        Author: {recipe.author}
+      </p>
+      <a href="{recipe.link}"><p className="desc">Recipe Link</p></a>
+      <hr />
+    </div>
+  );
+};
 
-const Card = ({ name, email, id }) => {
-    return (
-        <div className="tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
-            <img src={`https://robohash.org/${id}.png?200x200?bgset=bg1`} alt="profile" />
-            <div>
-                <h2>{name}</h2>
-                <p>{email}</p>
-            </div>
-        </div>
-    );
-}
-
-export default Card 
+export default Card;
