@@ -12,7 +12,7 @@ const Card = ({recipe}) => {
       <p className="desc">
         Author: {recipe.author}
       </p>
-      <img class="desc" src={recipe.img} alt="recipe pic"></img>
+      <img class="desc point" src={recipe.img} alt="recipe pic"></img>
       <a href={recipe.link}><p className="desc">Recipe Link</p></a>
       <hr />
     </div>
