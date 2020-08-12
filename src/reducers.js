@@ -4,7 +4,6 @@ const initialState = {
     searchField: ""
 }
 
-const init = []
 
 
 export const searchRobots = (state = initialState, action={}) => {
