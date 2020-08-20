@@ -4,7 +4,7 @@ const initialState = {
     searchField: ""
 }
 
-
+const defjam = []
 
 export const searchRobots = (state = initialState, action={}) => {
     switch(action.type) {
